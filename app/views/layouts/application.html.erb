@@ -15,7 +15,16 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/"><i class="fas fa-users"></i> DevMatch</a>
+
+        <%# HTML %>
+        <%# <a class="navbar-brand" href="/"><i class="fas fa-users"></i> DevMatch</a> %>
+
+        <%# rails %>
+        <%= link_to "/", class: "navbar-brand" do %>
+          <i class="fas fa-users"></i>
+          DevMatch
+        <% end %>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +41,10 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <span><a class="nav-link" href="/about">About</a></span>
+            <%# HTML way: %>
+            <%# <span><a class="nav-link" href="/about">About</a></span> %>
+            <%# Rails way: %>
+            <span><%= link_to "About", "/about", class:"nav-link"%></span>
           </span>
         </div>
       </div>
