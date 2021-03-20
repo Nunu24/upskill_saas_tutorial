@@ -20,7 +20,7 @@
         <%# <a class="navbar-brand" href="/"><i class="fas fa-users"></i> DevMatch</a> %>
 
         <%# rails %>
-        <%= link_to "/", class: "navbar-brand" do %>
+        <%= link_to root_path, class: "navbar-brand" do %>
           <i class="fas fa-users"></i>
           DevMatch
         <% end %>
@@ -34,17 +34,21 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/features">Features</a>
+              <%# HTML way: %>
+              <%# <a class="nav-link" href="/features">Features</a> %>
+              <%# Rails way: %>
+              <%= link_to 'Features', features_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pricing">Pricing</a>
+              <%# <a class="nav-link" href="/pricing">Pricing</a> %>
+              <%= link_to 'Pricing', pricing_path, class: "nav-link" %>
             </li>
           </ul>
           <span class="navbar-text">
             <%# HTML way: %>
             <%# <span><a class="nav-link" href="/about">About</a></span> %>
             <%# Rails way: %>
-            <span><%= link_to "About", "/about", class:"nav-link"%></span>
+            <span><%= link_to "About", about_path, class:"nav-link"%></span>
           </span>
         </div>
       </div>
