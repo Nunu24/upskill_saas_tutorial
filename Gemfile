@@ -62,5 +62,8 @@ group :production do
   gem 'pg', '~> 1.2', '>= 1.2.3'
 end
 
+# use font awesome sass gem for adding icons
+gem 'font-awesome-sass', '~> 5.15.1'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
