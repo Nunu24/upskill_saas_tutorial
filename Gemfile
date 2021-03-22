@@ -67,3 +67,5 @@ gem 'font-awesome-sass', '~> 5.15.1'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
