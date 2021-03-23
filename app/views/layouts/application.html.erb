@@ -45,12 +45,15 @@
               <%= link_to 'Pricing', pricing_path, class: "nav-link" %>
             </li>
           </ul>
-          <span class="navbar-text">
-            <%# HTML way: %>
-            <%# <span><a class="nav-link" href="/about">About</a></span> %>
-            <%# Rails way: %>
-            <span><%= link_to "About", about_path, class:"nav-link"%></span>
-          </span>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <%= link_to "Contact Us", new_contact_path, class: "nav-link"%>
+            </li>
+            <li class="nav-item">
+              <%= link_to "About", about_path, class:"nav-link"%>
+            </li>
+          </ul>
+
         </div>
       </div>
     </nav>
