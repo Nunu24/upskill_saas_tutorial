@@ -5,8 +5,9 @@
   
 
     <div class="col-md-4 offset-md-4">
+      <%= flash[:notice]%>
       <div class="card card-body bg-light">
-        <%= form_for "/contacts" do |f| %>
+        <%= form_for @contact do |f| %>
           <div class="form-group">
             <%= f.label :name, class:'form-label' %>
             <%= f.text_field :name, class: 'form-control' %>
