@@ -5,7 +5,7 @@
   
 
     <div class="col-md-4 offset-md-4">
-      <%= flash[:notice]%>
+      
       <div class="card card-body bg-light">
         <%= form_for @contact do |f| %>
           <div class="form-group">
@@ -27,6 +27,7 @@
           </div>
         <%end%>
       </div>
+      <%= flash[:notice]%>
     </div>
   </div>
 </div>

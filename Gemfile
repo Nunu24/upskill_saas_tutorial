@@ -71,3 +71,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'bootstrap', '~> 5.0.0.beta2'
 gem 'popper_js', '~> 2.8.6'
+
+#Hirb gem for better database table display in console
+gem 'hirb', '~> 0.7.3'
