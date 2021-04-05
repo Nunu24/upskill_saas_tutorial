@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'features', to: 'pages#features'
   get 'pricing', to: 'pages#pricing'
-  resources :contacts
+  resources :contacts, only: :create
+  get 'contact-us', to: 'contacts#new', as: 'new_contact'
 end
